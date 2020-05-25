@@ -4,7 +4,7 @@ on:
       - master
 
 env:
-  ResourceGroup: xstof-wedding
+  ResourceGroup: xstof-wedding-certmgmts
 jobs:
   build:
     runs-on: ubuntu-latest
