@@ -1,0 +1,43 @@
+{
+  "acme": {
+    "email": "christoftmp@hotmail.com",
+    "renewXDaysBeforeExpiry": 30,
+    "staging": false
+  },
+  "certificates": [
+    {
+      "hostNames": [
+        "deborahenchristoftrouwen.be"
+      ],
+      "challengeResponder": {
+        "type": "storageAccount",
+        "properties": {
+          "containerName": "$web",
+          "path": ".well-known/acme-challenge/",
+          "accountName": "example",
+          "connectionString": "",
+          "keyVaultName": "example",
+          "secretName": "Storage"
+        }
+      },
+      "certificateStore": {
+        "type": "keyVault",
+        "properties": {
+          "name": "xstof-wedding-kv",
+          "certificateName": "deborahenchristoftrouwen-be",
+          "resourceGroupName": "xstof-wedding"
+        }
+      },
+      "targetResource": {
+        "type": "cdn",
+        "properties": {
+          "name": "xstof-wedding-cdn",
+          "resourceGroupName": "xstof-wedding",
+          "endpoints": [
+            "xstof-wedding"
+          ]
+        }
+      }
+    }
+  ]
+}
