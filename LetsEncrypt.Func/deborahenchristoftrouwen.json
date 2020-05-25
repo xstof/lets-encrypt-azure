@@ -16,7 +16,7 @@
           "path": ".well-known/acme-challenge/",
           "accountName": "example",
           "connectionString": "",
-          "keyVaultName": "example",
+          "keyVaultName": "xstof-wedding-kv",
           "secretName": "Storage"
         }
       },
