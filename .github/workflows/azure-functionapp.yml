@@ -4,7 +4,7 @@ on:
       - master
 
 env:
-  ResourceGroup: letsencrypt-func
+  ResourceGroup: xstof-wedding
 jobs:
   build:
     runs-on: ubuntu-latest
